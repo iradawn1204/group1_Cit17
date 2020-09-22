@@ -41,3 +41,4 @@ class CreatePistolFeatureTable extends Migration
         Schema::dropIfExists('pistol_feature');
     }
 }
+
