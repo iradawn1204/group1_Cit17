@@ -32,4 +32,3 @@ class CreateHandgunTable extends Migration
         Schema::dropIfExists('handgun');
     }
 }
- 
