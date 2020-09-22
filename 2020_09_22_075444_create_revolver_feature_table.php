@@ -41,3 +41,4 @@ class CreateRevolverFeatureTable extends Migration
         Schema::dropIfExists('revolver_feature');
     }
 }
+ 
