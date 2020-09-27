@@ -17,7 +17,7 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <center><h1>Pump-Action Shotguns</h1></center>
+      <center><h1>Revolver</h1></center>
       <li>1.dsddfs</li>
       
        
