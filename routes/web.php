@@ -20,12 +20,27 @@ Route::get('/home', function () {
 Route::get('/shotgun' ,'ShotgunsController@index');
 Route::get('/shotgun/pumpaction' ,'PumpactionsController@index');
 Route::get('/shotgun/breakaction' ,'BreakactionsController@index');
+
+
 Route::get('/handgun' ,'HandgunsController@index');
 Route::get('/handgun/pistol' ,'PistolsController@index');
-Route::get('/handgun/revolver' ,'RevolversController@index');
+
 Route::get('/machinegun' ,'MachinegunsController@index');
 Route::get('/machinegun/submachinegun' ,'SubmachinegunsController@index');
 Route::get('/machinegun/heavymachinegun' ,'HeavymachinegunsController@index');
+
 Route::get('/bullet' ,'BulletController@index');
 
+//users
+Route::get('/users/create' ,'UsersController@create');
+Route::get('/users' ,'UsersController@index');
+Route::get('/users/{user}' ,'UsersController@show');
+Route::get('/users/{user}/edit' ,'UsersController@edit');
+Route::post('/users' ,'UsersController@store');
+Route::put('users/{user}','UsersController@update');
+Route::delete('users/{user}','UsersController@destroy');
 
+
+
+
+ 
