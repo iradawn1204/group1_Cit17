@@ -24,7 +24,7 @@ Route::get('/shotgun/breakaction' ,'BreakactionsController@index');
 
 Route::get('/handgun' ,'HandgunsController@index');
 Route::get('/handgun/pistol' ,'PistolsController@index');
-Route::get('/handgun/revolver' ,'RevolversController@index');
+Route::get('/handgun/revolver' ,'Revolver	sController@index');
 
 Route::get('/machinegun' ,'MachinegunsController@index');
 Route::get('/machinegun/submachinegun' ,'SubmachinegunsController@index');

@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\users;
+use Auth;
+use App\Users;
 use Illuminate\Http\Request;
 
 class UsersController extends Controller
@@ -34,14 +35,14 @@ class UsersController extends Controller
      
        public function store(){
 
-      // dd(request()->all());
-       	$user = new Users;
-       	$user->name = request()->name;
-       	$user->birthdate = request()->birthdate;
-       	$user->place = request()->place;
-       	$user->save();
+        $validated = request()->validate(['name' => 'required|unique:users',
+        'password'=> 'required',
+        'birthdate' => 'required',
+      	'place'=> 'required'
 
-       return redirect('/home');
+  ]);
+
+       return redirect('/login');
 
 
     //	return view('users.create');
