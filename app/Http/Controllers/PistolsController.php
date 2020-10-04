@@ -204,7 +204,4 @@ public function destroy(Pistols  $pistol){
 
           }
 
- 
-
-}
-}
+ }
