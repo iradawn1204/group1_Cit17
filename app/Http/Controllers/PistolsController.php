@@ -50,6 +50,7 @@ class PistolsController extends Controller
        	$pistol->user_comment = request()->user_comment;
 
        	$pistol->save();
+        $pistol->update($validated_fields);
 
        return redirect('/home');
 
