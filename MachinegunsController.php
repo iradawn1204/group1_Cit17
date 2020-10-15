@@ -33,6 +33,8 @@ class MachinegunsController extends Controller
        	$Machinegun->user_rating = request()->user_rating;
        	$Machinegun->user_comment = request()->user_comment;
        	$Machinegun->save();
+
+             $Machinegun->update($validated_fields);
        return redirect('/home');
     //	return view('users.create');
 }
