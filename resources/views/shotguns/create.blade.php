@@ -17,10 +17,9 @@
               <div class="section no-pad-bot" id="index-banner">
                 <div class="container">
                    <br><br>
-                    <center><h1>Edit User</h1></center>
+                    <center><h1>Create User</h1></center>
                     
-                       <form action="/users/{{$user->id}}" method='POST'> 
-                       @method('PUT')  
+                       <form action="/users" method="POST">   
                        @csrf     
                       
                         <div class="row">
@@ -28,16 +27,13 @@
                              <div class="row">
                                   <div class="input-field col s6">
                                     <p>Fullname:</p>
-                                    <input placeholder="Firstname/Lastname" id="name" type="text" name="name" value='{{$user->name}}'>
-
-                                      <p>Password:</p>
-                                    <input required placeholder="Passwored" id="password" type="password" name="password">
-
+                                    <input placeholder="Firstname/Lastname" id="name" type="text" name="name">
+                                     
                                      <p>Birthday:</p>
-                                    <input placeholder="month/day/year eg: 12/04/1999" id="birthdate" type="text" name="birthdate" value='{{$user->birthdate}}'>
-
+                                    <input placeholder="month/day/year eg: 12/04/1999" id="birthdate" type="text" name="birthdate">
+                                     
                                       <p>Place:</p>
-                                       <input placeholder="country/provinve/city" id="place" type="text" name="place" value='{{$user->place}}'>
+                                       <input placeholder="country/provinve/city" id="place" type="text" name="place">
                                      <input type="submit" value="Submit" name="action">
                      
                        </div>

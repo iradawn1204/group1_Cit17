@@ -20,21 +20,39 @@
                     <center><h1>Create User</h1></center>
                     
                        <form action="/users" method="POST">   
+
                        @csrf     
+                         @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
                       
                         <div class="row">
                            <form class="col s12">
                              <div class="row">
                                   <div class="input-field col s6">
+
                                     <p>Fullname:</p>
-                                    <input placeholder="Firstname/Lastname" id="name" type="text" name="name">
+                                    <input required placeholder="Firstname/Lastname" id="name" type="text" name="name">
+
+                                      <p>Password:</p>
+                                    <input required placeholder="Passwored" id="password" type="password" name="password">
                                      
                                      <p>Birthday:</p>
-                                    <input placeholder="month/day/year eg: 12/04/1999" id="birthdate" type="text" name="birthdate">
+                                    <input required placeholder="month/day/year eg: 12/04/1999" id="birthdate" type="text" name="birthdate">
                                      
                                       <p>Place:</p>
-                                       <input placeholder="country/provinve/city" id="place" type="text" name="place">
-                                     <input type="submit" value="Submit" name="action">
+                                       <input required placeholder="country/provinve/city" id="place" type="text" name="place">
+
+                                     <input type="submit" value="submit" name="action">
+
+                                     
+
                      
                        </div>
                  </form>

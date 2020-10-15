@@ -30,9 +30,6 @@
                                     <p>Fullname:</p>
                                     <input placeholder="Firstname/Lastname" id="name" type="text" name="name" value='{{$user->name}}'>
 
-                                      <p>Password:</p>
-                                    <input required placeholder="Passwored" id="password" type="password" name="password">
-
                                      <p>Birthday:</p>
                                     <input placeholder="month/day/year eg: 12/04/1999" id="birthdate" type="text" name="birthdate" value='{{$user->birthdate}}'>
 

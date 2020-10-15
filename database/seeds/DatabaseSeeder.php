@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
 
-        	PistolsSeeder::class
+        	PistolsSeeder::class,UserSeeder::class,ShotgunSeeder::class,PumpActionSeeder::class,BreakActionSeeder::class
 
 
         ]);
